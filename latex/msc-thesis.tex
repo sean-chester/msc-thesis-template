@@ -1,0 +1,29 @@
+% !BIB TS-program = biber
+% !TEX encoding = UTF-8 Unicode
+% !TEX program = LuaLaTeX
+
+\documentclass[a4paper,12pt,openany]{book}
+
+\input{tex/preamble}
+
+\begin{document}
+
+\input{tex/static/title-page}
+\input{tex/abstract}
+\input{tex/sammendrag}
+\input{tex/acknowledgments}
+\input{tex/static/orientation}
+
+\mainmatter
+\input{tex/introduction}
+\input{tex/background}
+\input{tex/related-work}
+\input{tex/first-method}
+\input{tex/second-method}
+\input{tex/experiments}
+\input{tex/conclusion}
+
+\backmatter
+\input{tex/static/bibliography}
+
+\end{document}

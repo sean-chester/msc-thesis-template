@@ -1,0 +1,41 @@
+% Courtesy of http://tex.stackexchange.com/a/37090/84485 to format as ACM style
+\DeclareNameAlias{default}{last-first}
+
+\AtBeginBibliography{%
+  \renewcommand*{\mkbibnamelast}[1]{\textsc{#1}}%
+  %% commas between authors
+  \renewcommand{\multinamedelim}{\addcomma\space}
+  \renewcommand{\finalnamedelim}{\addcomma\addspace\textsc{and}\space}
+  \renewcommand{\andothersdelim}{\addcomma\addspace\sc}
+}
+
+\renewcommand*{\labelnamepunct}{\space\space}
+
+\DeclareFieldFormat
+  [article,inbook,incollection,inproceedings,patent,thesis,unpublished]
+  {title}{#1}
+
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{%
+  }{%
+    \printtext{\bibstring{in}\intitlepunct}%
+  }%
+}
+
+\renewbibmacro*{volume+number+eid}{%
+  \printfield{volume}%
+  \setunit*{\addcomma\space}%
+  \printfield{number}%
+  \setunit{\addcomma\space}%
+  \printfield{eid}}
+
+\DeclareFieldFormat{pages}{#1}
+
+\renewbibmacro*{publisher+location+date}{%
+  \printlist{publisher}%
+  \setunit*{\addcomma\space}%
+  \printlist{location}%
+  \setunit*{\addcomma\space}%
+  \usebibmacro{date}%
+  \newunit}
+  

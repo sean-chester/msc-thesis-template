@@ -1,0 +1,44 @@
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsthm,amsmath}
+
+\usepackage{subcaption}
+
+\usepackage{algorithm}
+\usepackage[noend]{algorithmic}
+
+\usepackage{datetime}
+\usepackage{ctable} % for \specialrule command
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\newtheorem{definition}{Definition}
+\newtheorem*{probdef}{Problem Definition}
+
+
+\newcommand{\AUTHOR}{Student Name}
+\newcommand{\ADVISORS}{Supervisor(s) Name(s)}
+\newcommand{\TITLE}{Thesis Title}
+\newcommand{\CITY}{Trondheim} % Where the acknowledgments were written
+\newcommand{\SUBJECT}{Generic subject}
+\newcommand{\KEYWORDS}{comma, separated, keyword, list}
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+ pdfauthor = {\AUTHOR},
+ pdftitle = {\TITLE},
+ pdfsubject = {\SUBJECT},
+ pdfkeywords = {\KEYWORDS}
+}
+
+
+% For managing references, styled in ACM format
+\usepackage[
+  style=alphabetic,
+  citestyle=alphabetic,
+  natbib=true,
+  backend=biber,
+  giveninits=true
+]{biblatex}
+\addbibresource{bib/bibliography.bib}
+
+\input{tex/static/bib-styling}
