@@ -1,0 +1,238 @@
+\documentclass{article}
+
+\usepackage{fontawesome}
+\usepackage{hyperref}
+
+\usepackage{makecell}
+\renewcommand{\cellalign}{cl}
+% Table styling adapted from: https://tex.stackexchange.com/a/615088/84485
+\usepackage[table]{xcolor}
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+
+\definecolor{blue}{HTML}{008ED7}
+\definecolor{mygray}{gray}{0.75}
+\definecolor{lightBlue}{HTML}{e5f7ff}
+
+\usepackage[
+  top=1cm,
+  bottom=1cm,
+  left=4cm,
+  right=4cm,
+  headheight=17pt, % as per the warning by fancyhdr
+  includehead,includefoot,
+  heightrounded, % to avoid spurious underfull messages
+]{geometry}
+
+
+\newcommand{\name}{A Student}
+\newcommand{\email}{astudent@uvic.ca}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear all fields
+\renewcommand{\headrulewidth}{1pt}
+%\fancyhead[R]{\bfseries\sffamily\thepage}
+\fancyfoot[C]{\bfseries\sffamily\thepage}
+\fancyhead[L]{\nouppercase{\bfseries\sffamily{Breadth Statement}}}
+\fancyhead[R]{\nouppercase{\bfseries\sffamily\name}}
+
+\title{Breadth Statement}
+\author{\name}
+\date{%
+    \faEnvelope\ \ \href{mailto:\email}{\email}\\%
+    Algorithms for Mixed Parallelism in Software ({\faBolt}AMPS) Lab\\%
+    Department of Computer Science\\%
+    University of Victoria, Canada\\[2em]%
+    \today
+}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{table}[h!]
+  \vspace{-2em}
+  \centering
+    \begin{tabular}{rl}
+      {\bfseries Supervisor} & Dr. Sean Chester\\
+      {\bfseries Committee} & TBD\\
+      {\bfseries Program} & Industrial Master's\\
+      {\bfseries Program Start Date} & September 2023
+  \end{tabular}
+\end{table}
+
+\section{Primary Research Area}
+
+\noindent
+{\bfseries Breadth Area}: Systems
+
+\medskip\noindent
+{\em Justification}\hspace{0.5em}
+Five or so sentences about your research topic and why the research methods fit with the area of Systems (or another selection).
+Five or so sentences about your research topic and why the research methods fit with the area of Systems (or another selection).
+Five or so sentences about your research topic and why the research methods fit with the area of Systems (or another selection).
+Five or so sentences about your research topic and why the research methods fit with the area of Systems (or another selection).
+Five or so sentences about your research topic and why the research methods fit with the area of Systems (or another selection).
+
+
+
+
+\begin{table}[htb]
+\setlist{nolistsep}
+\begin{tabularx}{\textwidth}[t]{XX}
+\arrayrulecolor{mygray}\hline
+\arrayrulecolor{blue}\hline
+\rowcolor{lightBlue} \textbf{\textcolor{blue}{Applications}} & \\
+\arrayrulecolor{mygray}\hline
+\arrayrulecolor{blue}\hline
+
+\makecell{%
+~\\
+\parbox{\linewidth}{%
+A.1: CSC 501
+}\\
+~\\
+}& 
+\makecell{%
+~\\
+\parbox{\linewidth}{%
+Algorithms \& Data Models\\
+Fall 2023 (Dr. Sean Chester)\\
+A+
+}\\
+~\\
+}\\
+
+
+\arrayrulecolor{mygray}\hline
+\arrayrulecolor{blue}\hline
+\rowcolor{lightBlue} \textbf{\textcolor{blue}{Systems}} & \\
+\arrayrulecolor{mygray}\hline
+\arrayrulecolor{blue}\hline
+
+\makecell{%
+~\\
+\parbox{\linewidth}{%
+S.1: CSC 591
+}\\
+~\\
+}& 
+\makecell{%
+~\\
+\parbox{\linewidth}{%
+Directed Studies\\
+Lock-free, GPU, and vector programming\\
+Fall 2023 (Dr. Sean Chester)\\
+A+
+}\\
+~\\
+}\\
+
+\arrayrulecolor{mygray}\hline
+
+\makecell{%
+~\\
+\parbox{\linewidth}{%
+S.2: CSC 586C\\
+{\em (planned)}
+}\\
+~\\
+}& 
+\makecell{%
+~\\
+\parbox{\linewidth}{%
+Topics Comp. Sys. Softw.\\
+GPU Computing\\
+Fall 2024 (Dr. Sean Chester)\\
+N/A
+}\\
+~\\
+}\\
+
+
+\arrayrulecolor{mygray}\hline
+\arrayrulecolor{blue}\hline
+\rowcolor{lightBlue} \multicolumn{2}{l}{%
+\textbf{\textcolor{blue}{Theory}}} \\
+\arrayrulecolor{mygray}\hline
+\arrayrulecolor{blue}\hline
+
+\makecell{%
+~\\
+\parbox{\linewidth}{%
+T.1: CSC 586B\\
+{\em (planned)}
+}\\
+~\\
+}& 
+\makecell{%
+~\\
+\parbox{\linewidth}{%
+Topics Comp. Sys. Softw.\\
+Geometric Modelling\\
+Fall 2024 (Dr. Teseo Schneider)\\
+N/A
+}\\
+~\\
+}\\
+
+\arrayrulecolor{mygray}\hline
+\arrayrulecolor{blue}\hline
+
+\end{tabularx}
+\caption{\label{table:courses-taken}List of taken and proposed coursework, ordered by breadth category}
+\end{table}
+
+
+
+\section{Coursework}
+\autoref{table:courses-taken} lists both planned an completed coursework, organised by breadth category. The following subsections describe each course and its relationship to my primary research.
+
+\subsection{Course A.1: CSC 501}
+\noindent
+{\em Course Description}\hspace{0.5em}
+Three or so sentences taken from the course outline describing what this course is.
+Three or so sentences taken from the course outline describing what this course is.
+Three or so sentences taken from the course outline describing what this course is.
+
+\medskip
+\noindent
+{\em Course Evaluation}\hspace{0.5em}
+Four or so sentences describing how the course was evaluated and why that fits into the selected breadth category.
+Four or so sentences describing how the course was evaluated and why that fits into the selected breadth category.
+Four or so sentences describing how the course was evaluated and why that fits into the selected breadth category.
+Four or so sentences describing how the course was evaluated and why that fits into the selected breadth category.
+
+
+\medskip
+\noindent
+{\em Research Overlap}\hspace{0.5em}
+Four or so sentences describing why this course does not overlap with your credit for your research project/thesis.
+Four or so sentences describing why this course does not overlap with your credit for your research project/thesis.
+Four or so sentences describing why this course does not overlap with your credit for your research project/thesis.
+Four or so sentences describing why this course does not overlap with your credit for your research project/thesis.
+
+\subsection{Course A.1: CSC 501}
+As before.
+
+\subsection{Course A.1: CSC 501}
+As before.
+
+\subsection{Course A.1: CSC 501}
+As before.
+
+\section{Supervisor's Statement}
+\vspace{15em}
+
+
+\begin{thebibliography}{1}
+
+\bibitem{aa} Department of Computer Science Graduate Committee (n.d.). ``Breadth Requirement Classification.'' Retrieved 2-Jul-2024 from: \url{https://www.uvic.ca/ecs/computerscience/assets/docs/grad/breadth-requirement-classification.pdf}.
+
+\end{thebibliography}
+
+\end{document}
